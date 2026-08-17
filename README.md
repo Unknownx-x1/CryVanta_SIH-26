@@ -1,4 +1,4 @@
-##For end-to-end Testing:
+## For end-to-end Testing:
 
 ```bash
 
@@ -8,9 +8,9 @@ python -m py_compile risk_engine.py decision_engine.py actuation.py schemas.py m
 ```
 
 
-##All working usable APIs
+## All working usable APIs
 
-###Main endpoints:
+### Main endpoints:
 GET /health checks service status
 
 GET /state shows latest stored telemetry, forecast, decision, actuation
@@ -33,7 +33,7 @@ actuation
 ```
 
 
-##To run everything:
+## To run the backend:
 
 ``` bash
 
@@ -44,7 +44,7 @@ python -m uvicorn main:app --reload
 ```
 
 
-##For Docs:
+## For Docs:
 
 ```bash
 http://127.0.0.1:8000/docs
