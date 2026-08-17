@@ -12,9 +12,13 @@ python -m py_compile risk_engine.py decision_engine.py actuation.py schemas.py m
 
 ###Main endpoints:
 GET /health checks service status
+
 GET /state shows latest stored telemetry, forecast, decision, actuation
+
 POST /telemetry stores incoming ESP32/simulator telemetry
+
 POST /potency stores potency estimate
+
 POST /forecast runs your Person 2 decision logic and returns:decision
 actuation
 
