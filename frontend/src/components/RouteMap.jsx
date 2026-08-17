@@ -16,7 +16,8 @@ const coldDepotIcon = L.divIcon({
 
 export default function RouteMap({ state }) {
   const { decision, telemetry, primaryRoute, alternateRouteB } = state;
-  const isRerouted = decision?.recommended_route === 'ALTERNATE_ROUTE_B';
+  const recommendedRoute = decision?.recommended_route || 'CURRENT_ROUTE';
+  const isRerouted = recommendedRoute !== 'CURRENT_ROUTE';
   const currentPos = [telemetry?.gps?.lat ?? 12.9716, telemetry?.gps?.lng ?? 77.5946];
 
   return (
