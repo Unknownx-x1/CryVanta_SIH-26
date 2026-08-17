@@ -13,6 +13,12 @@ __pycache__/
 .venv/
 env/
 venv/
+venv_sih/
+.env
+
+# PDF files / Scratch
+Predict_Combined_Roadmap.pdf
+PredictFuse_Combined_Concept.pdf
 
 # IDE / OS
 .DS_Store
